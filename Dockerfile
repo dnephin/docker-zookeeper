@@ -1,8 +1,6 @@
-# DOCKER-VERSION 1.0.1
-# VERSION        0.5
 
 FROM    alpine:edge
-MAINTAINER Justin Plock <justin@plock.net>
+MAINTAINER Daniel Nephin <dnephin@gmail.com>
 
 ENV     MIRROR  http://apache.mirrors.pair.com/
 ENV     VERSION 3.4.6
@@ -16,7 +14,7 @@ RUN     mkdir /opt && \
 
 ENV     JAVA_HOME /usr/lib/jvm/java-1.7-openjdk
 
-EXPOSE 2181 2888 3888
+EXPOSE  2181 2888 3888
 
 WORKDIR /opt/zookeeper
 
