@@ -12,3 +12,6 @@ Docker Hub: https://hub.docker.com/r/dnephin/docker-zookeeper/
     docker run dnephin/zookeeper:3.4.6
 
 ```
+
+Used by https://github.com/dnephin/compose-swarm-sandbox/ to create a swarm
+sandbox.
