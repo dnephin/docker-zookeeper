@@ -9,7 +9,7 @@ Docker Hub: https://hub.docker.com/r/dnephin/docker-zookeeper/
 ## Usage
 
 ```
-    docker run dnephin/zookeeper:3.4.6
+    docker run dnephin/docker-zookeeper:3.4.6
 
 ```
 
