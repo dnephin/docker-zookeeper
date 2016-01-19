@@ -1,9 +1,9 @@
 
-FROM    alpine:edge
+FROM    alpine:3.3
 MAINTAINER Daniel Nephin <dnephin@gmail.com>
 
-ENV     MIRROR  http://apache.mirrors.pair.com/
-ENV     VERSION 3.4.6
+ARG     MIRROR=http://apache.mirrors.pair.com/
+ARG     VERSION=3.4.6
 RUN     apk --update add openjdk7-jre wget bash
 RUN     mkdir /opt && \
             wget -q -O - $MIRROR/zookeeper/zookeeper-$VERSION/zookeeper-$VERSION.tar.gz | \
